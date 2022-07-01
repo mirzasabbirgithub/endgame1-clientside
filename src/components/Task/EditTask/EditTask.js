@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
+import { Button, Modal } from 'bootstrap';
 const EditTask = () => {
           const { taskId } = useParams();
           const [task, setTask] = useState({});
@@ -14,14 +15,12 @@ const EditTask = () => {
 
           return (
                     <div >
-                              <h2>Clicked Task</h2>
-                              <Card className='mx-auto w-50' style={{ width: '18rem' }}>
+                              <h3>Your Task</h3>
+                              <Card className='mx-auto w-50 mb-3' style={{ width: '18rem' }}>
                                         <Card.Body>
-                                                  <Card.Title className='text-success'>{task._id}</Card.Title>
-                                                  <Card.Text>Description: {task._id}</Card.Text>
-
+                                                  <Card.Title className='text-success'>{task.taskname}</Card.Title>
+                                                  <Card.Text><b>Description:</b> {task.detials}</Card.Text>
                                         </Card.Body>
-
                               </Card>
                               <div>
 

@@ -11,7 +11,7 @@ const TaskList = ({ task }) => {
                     <div className="card col-sm-12 col-md-6 col-lg-4">
                               <div class="card-body">
                                         <h5 className="card-title"> {taskname}</h5>
-                                        <p className="card-text">Detials About Task: {detials}</p>
+                                        <p className="card-text"><b>Detials:</b> {detials}</p>
                                         <button onClick={() => navigateToEditablePage(_id)} className='btn btn-danger'>Edit</button>
                               </div>
                     </div >

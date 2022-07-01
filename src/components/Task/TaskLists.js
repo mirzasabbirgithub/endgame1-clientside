@@ -6,7 +6,7 @@ const TaskLists = () => {
           const [tasks, setTasks] = UseData([]);
 
           return (
-                    <div className='container gx-5' >
+                    <div className='container gx-2 mb-5' >
                               <h1 className='text-info text-center mt-2'>ToDo List / Task List</h1>
                               <div className="row">
                                         {
